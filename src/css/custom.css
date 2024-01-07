@@ -1,0 +1,62 @@
+.btn {
+    background: #9013FE;
+    border: 2px solid #9013FE;
+    text-decoration: none;
+    padding: 15px 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.btn > a {
+    color: #fff;
+}
+
+.btn:hover > a{
+    color: #9013FE;
+
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: scaleY(0);
+    background: #9013FE;
+    opacity: 0;
+
+}
+
+.btn-animation:hover::before {
+    transform: scaleY(1);
+    background: #000;
+    opacity: 1;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%;
+    }
+
+    15% {
+        top: 50%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 29%;
+    }
+}

@@ -1,0 +1,36 @@
+:root {
+    --black: #000;
+    --border-black: #222;
+    --white: white;
+    --purple: #9013FE;
+    --nav: 20rem;
+    --color-base: #888888
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
