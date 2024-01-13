@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/base.css">
-    <link rel="stylesheet" href="./src/css/home.css">
-    <link rel="stylesheet" href="./src/css/nav.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/custom.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/nav.css">
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/contact.css">
+    <link rel="stylesheet" href="./src/css/skill.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -22,7 +26,6 @@
 </head>
 
 <body>
-    
     <nav class="nav-desktop">
         <div class="nav-header">
             <div class="avatar">
@@ -54,9 +57,9 @@
         <div class="nav-footer">
             <div class="social-body">
                 <ul class="social-list">
-                    <li class="social-item"><a target="_blank" href=""><i class=" fa-brands
+                    <li class="social-item"><a target="_blank" href="https://www.instagram.com/_minhhviet/"><i class=" fa-brands
                             fa-square-instagram"></i></a></li>
-                    <li class="social-item"><a target="_blank"
+                    <li class="social-item"><a target="_blank" wrapper
                             href="https://www.facebook.com/profile.php?id=100024981731218"><i
                                 class="fa-brands fa-facebook"></i></a></li>
                     <li class="social-item">
@@ -74,52 +77,279 @@
         </div>
     </nav>
     <main id="main">
+
         <nav class="nav-mobile">
-            <div class="icon-menu">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </div>
-            <div class="body-nav-mobile">
-                <div class="avatar-mobile">
-                    <img src="./src/image/image-ava.jpg" alt="Le Minh Viet">
-                </div>
-                <p class="name-mobile">
-                    Le Minh Viet
-                </p>
-            </div>
-        </nav>
-        <div class="content">
-            <div id="home">
-                <div class="home-body">
-                    <h1 class="home-title">hello,</h1>
-                    <div class="home-text">
-                        <p>
-                            I am Minh Việt, web developer from HCM City, VietNam. <br> I have rich experience in web
-                            site
-                            design
-                            and building and customization, also I am good at Front-end and Back-end.
+            <div class="wrapper">
+                <div class="nav-mobile-wrap">
+                    <div class="icon-menu">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <div class="body-nav-mobile ">
+                        <div class="avatar-mobile">
+                            <img src="./src/image/image-ava.jpg" alt="Le Minh Viet">
+                        </div>
+                        <p class="name-mobile">
+                            Le Minh Viet
                         </p>
                     </div>
-                    <div class="home-button">
-                        <button type="" class="watch-cv btn btn-animation">
-                            <a href="https://www.topcv.vn/xem-cv/XAEDV1ADAABcAwdWUwFZVwEHBgdVUQNaDVAEAAa180" target="_blank">
-                                <i class="fa-solid fa-eye"></i>
-                                Watch CV
-                            </a>
-                          
-                        </button>
+                </div>
+            </div>
+        </nav>
+        <div class="content ">
+            <!-- Home -->
+            <div id="home" class="padding-general border-bottom">
+                <div class="wrapper">
+                    <div class="home-body">
+                        <h1 class="home-title">hello,</h1>
+                        <div class="home-text">
+                            <p>
+                                I am Minh Việt, web developer from HCM City, VietNam. I have rich experience in web
+                                site
+                                design
+                                and building and customization, also I am good at Front-end and Back-end.
+                            </p>
+                        </div>
+                        <div class="home-button">
+                            <button type="" class="watch-cv btn btn-animation">
+                                <a href="https://www.topcv.vn/xem-cv/XAEDV1ADAABcAwdWUwFZVwEHBgdVUQNaDVAEAAa180"
+                                    target="_blank">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Watch CV
+                                </a>
+
+                            </button>
+                        </div>
+                        <div class="mouse-body">
+                            <div class="mouse">
+                                <div class="mouse-scroll"></div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="mouse-body">
-                        <div class="mouse">
-                            <div class="mouse-scroll"></div>
+                </div>
+            </div>
+            <!-- End Home -->
+            <!-- Contact -->
+            <div id="skill" class="padding-general border-bottom">
+                <div class="wrapper">
+                    <div class="body-wrap">
+                        <h2 class="heading-title">SKILLS</h2>
+                        <div class="spacer-element"></div>
+                        <div class="row">
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-html5 skill-icon square"
+                                        style="background-color: #e65b25;"></i>
+                                    <p class="contact-text">HTML5</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-css3-alt skill-icon square"
+                                        style="background-color: #0273b7;"></i>
+                                    <p class="contact-text">CSS3</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-sass skill-icon square"
+                                        style="background-color: #cf649a;"></i>
+                                    <p class="contact-text">SASS</p>
+                                </div>
+                            </div>
+
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-bootstrap skill-icon square"
+                                        style="background-color: #8311f6;"></i>
+                                    <p class="contact-text">Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-git-alt skill-icon square"
+                                        style="background-color: #e84e31;"></i>
+                                    <p class="contact-text">GIT</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-js skill-icon square" style="background-color: #e8d44d;"></i>
+                                    <p class="contact-text">JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-jsfiddle skill-icon square"
+                                        style="background-color: #2f74c0;"></i>
+                                    <p class="contact-text">TypeScript</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-java skill-icon square"
+                                        style="background-color: #e8e7f6; color: #ef0000;"></i>
+                                    <p class="contact-text">Java</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-php skill-icon square"
+                                        style="background-color: #7377ad;"></i>
+                                    <p class="contact-text">PHP</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-react skill-icon square"
+                                        style="background-color: #f7f7f7; color: #5ed3f3;"></i>
+                                    <p class="contact-text">React</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-neos skill-icon square"></i>
+                                    <p class="contact-text">NextJS</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-node-js skill-icon square"
+                                        style="background-color: #f7f7f7 ; color: #7bd454;"></i>
+                                    <p class="contact-text">NodeJS</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-wolf-pack-battalion skill-icon square"
+                                        style="background-color: #e8e7f6; color: #ef0000;"></i>
+                                    <p class="contact-text">NestJS</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-laravel skill-icon square"
+                                        style="background-color: #e8e7f6; color: #ef0000;"></i>
+                                    <p class="contact-text">Laravel</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-solid fa-cloud skill-icon square"
+                                        style="background-color: #e8e7f6; color: #3448c5"></i>
+                                    <p class="contact-text">Cloudinary</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-aws skill-icon square"
+                                        style="background-color: #e8e7f6; color: #ee951d"></i>
+                                    <p class="contact-text">AWS</p>
+                                </div>
+                            </div>
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-brands fa-docker skill-icon square"
+                                        style="background-color: #e8e7f6; color: #2962cd"></i>
+                                    <p class="contact-text">Docker</p>
+                                </div>
+                            </div>
+
+                            <div class="col c-3 m-2 l-2">
+                                <div class="skill-wrap dc-left">
+                                    <i class="fa-solid fa-database skill-icon square"
+                                        style="background-color: #f7f7f7 ; color: #7bd454;"></i>
+                                    <p class="contact-text">SQL, NoSQL</p>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End Contact -->
+            <!-- Contact -->
+            <div id="contact" class="padding-general">
+                <div class="wrapper">
+                    <div class="body-wrap">
+                        <h2 class="heading-title">CONTACT</h2>
+                        <div class="spacer-element"></div>
+
+                        <div class="row">
+                            <div class="col c-12 m-4 l-4">
+                                <div class="contact-wrap dc-center">
+                                    <i class="fa-solid fa-phone contact-icon"></i>
+                                    <p class="contact-text">Call me</p>
+                                    <p class="contact-link">
+                                        <a class="color-disabled" href="tel:+84914726153">
+                                            +84 914726153
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col c-12 m-4 l-4">
+                                <div class="contact-wrap dc-center">
+                                    <i class="fa-solid fa-envelope contact-icon"></i>
+                                    <p class="contact-text">Email</p>
+                                    <p class="contact-link">
+                                        <a class="color-disabled" href="mailto:vietminh794@gmail.com">
+                                            vietminh794@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col c-12 m-4 l-4">
+                                <div class="contact-wrap dc-center">
+                                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                                    <p class="contact-text">Address</p>
+                                    <p class="contact-link">
+                                        <a class="color-disabled">
+                                            Ho Chi Minh City
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form method="post" class="row form-contact" action="">
+                            <div class="col c-12 m-6 l-6">
+                                <input type="text" placeholder="Your name" name="name" class="input-contact required">
+                                <span class="text-alert">The field is required.</span>
+                            </div>
+                            <div class="col c-12 m-6 l-6">
+                                <input type="email" placeholder="Email address" name="email" required
+                                    class="input-contact required">
+                                <span class="text-alert">The field is required.</span>
+                            </div>
+                            <div class="col c-12 m-6 l-6">
+                                <input type="text" placeholder="Phone number" name="phone"
+                                    class="input-contact required">
+                                <span class="text-alert">The field is required.</span>
+                            </div>
+                            <div class="col c-12 m-6 l-6">
+                                <input type="text" placeholder="Subject" name="subject" class="input-contact required">
+                                <span class="text-alert">The field is required.</span>
+                            </div>
+                            <div class="col c-12 m-12 l-12">
+                                <textarea name="message" rows="5" class="input-contact input-area" aria-required="true"
+                                    aria-invalid="true" placeholder="Message..."></textarea>
+                            </div>
+                            <div class="col c-12 m-12 l-12">
+                                <button type="submit" class="watch-cv btn-submit btn btn-animation">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    SUBMIT MESSAGE
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
         </div>
     </main>
     <div id="myBar"></div>
     <script src="./src/js/index.js"> </script>
+    <script src="./src/js/submit.js"> </script>
 </body>
 
 </html>

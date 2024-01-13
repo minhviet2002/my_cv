@@ -1,0 +1,13 @@
+.skill-icon {
+    
+}
+.skill-icon.square {
+    color: #FFF;
+    font-size: 30px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 60px;
+}

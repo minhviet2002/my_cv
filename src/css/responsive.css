@@ -1,19 +1,57 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
     .nav-desktop {
         left: -30rem;
+    }
+    .body-wrap {
+        padding: 2.5rem 0rem 2.5rem 0rem;
+    }
+    .spacer-element {
+        height: calc(var(--spacer-element) / 2);
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
     .nav-desktop {
         left: -30rem;
+    }
+
+    .body-wrap {
+        padding: 3rem 0rem 3rem 0rem;
+
+    }
+
+    .spacer-element {
+        height: calc(var(--spacer-element) / 1.5);
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .wrapper {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .body-wrap {
+        padding: 5rem 0rem 5rem 0rem;
+    }
+
+    .spacer-element {
+        height: calc(var(--spacer-element) / 1.2);
+    }
+
     .nav-desktop {
         left: -30rem;
     }
@@ -21,13 +59,45 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .nav-mobile {
-        display: none;
+    .wrapper {
+        max-width: 992px;
+        margin: 0 5rem 0 auto;
+
+    }
+
+    .spacer-element {
+        height: calc(var(--spacer-element) / 1.2);
+    }
+
+    .body-wrap {
+        padding-top: 7rem;
+    }
+
+    .nav-desktop {
+        left: -30rem;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: calc(1200px - var(--nav-width));
+        margin: 0 auto;
+    }
+
+    .spacer-element {
+        height: var(--spacer-element);
+    }
+
+    .body-wrap {
+        padding: 8rem 0rem 8rem 0rem;
+
+    }
+
+    .padding-general {
+        padding-left: var(--nav-width);
+    }
+
     .nav-mobile {
         display: none;
     }

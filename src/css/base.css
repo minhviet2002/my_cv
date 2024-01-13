@@ -4,7 +4,11 @@
     --white: white;
     --purple: #9013FE;
     --nav: 20rem;
-    --color-base: #888888
+    --color-base: #888888;
+    --nav-width: 30rem;
+    --color-disabled: #888888;
+    --spacer-element: 8rem;
+    --color-error: #dc3232
 }
 
 * {
@@ -17,6 +21,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -33,4 +38,3 @@ a {
 li {
     list-style: none;
 }
-

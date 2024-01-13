@@ -14,7 +14,7 @@ window.onscroll = function () {
 
 function togleMenu() {
   const navDes = document.querySelector(".nav-desktop");
-  const main = document.querySelector("#main");
+  const navMobile = document.querySelector(".nav-mobile");
 
   const avatarMobile = document.querySelector(".avatar-mobile");
   const nameMobile = document.querySelector(".name-mobile");
@@ -23,13 +23,13 @@ function togleMenu() {
   navDes.classList.toggle("active-navDes");
   if (navDes.classList.contains("active-navDes")) {
     navDes.style.left = "0rem";
-    main.style.paddingLeft = "30rem";
+    navMobile.style.left = "var(--nav-width)";
     avatarMobile.style.display = "none";
     nameMobile.style.display = "none";
 
   } else {
     navDes.style.left = "-30rem";
-    main.style.paddingLeft = "0rem";
+    navMobile.style.left = "0rem";
     avatarMobile.style.display = "block";
     nameMobile.style.display = "block";
   }

@@ -5,11 +5,11 @@
 }
 
 .content {
-    height: 200vh;
     width: 100%;
     color: var(--white);
     background-color: var(--black);
     position: relative;
+    
 }
 .content::before {
     content: '';
