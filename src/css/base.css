@@ -33,6 +33,12 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--purple);
+    opacity: .9;
+    transition: all .15s ease-in-out;
+}
+a:hover {
+    opacity: 1;
 }
 
 li {

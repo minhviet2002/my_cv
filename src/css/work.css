@@ -1,0 +1,44 @@
+.work-item {
+    padding-left: 5rem;
+    border-left: .2rem solid var(--purple);
+    position: relative;
+
+}
+
+.work-item::before {
+    content: "";
+    position: absolute;
+    top: -.5rem;
+    left: -.6rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--purple);
+
+}
+
+.year-work {
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.name-company {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.worked-it {
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: rgb(136, 136, 136);
+    padding-top: 1.5rem;
+    display: block;
+}
+
+.worked-it:first-child{
+    padding-top: inherit !important;
+}
+

@@ -9,8 +9,9 @@
     color: var(--white);
     background-color: var(--black);
     position: relative;
-    
+
 }
+
 .content::before {
     content: '';
     position: absolute;
@@ -20,10 +21,12 @@
     z-index: -1;
     opacity: 0;
 }
+
 .content.show::before {
     opacity: 1;
     z-index: 999;
 }
+
 #myBar {
     position: fixed;
     left: 0;
@@ -34,4 +37,44 @@
     z-index: 9999;
     transition: ease-in-out linear 5s;
     border-radius: .3rem;
+}
+
+.color-disabled {
+    color: var(--color-disabled);
+}
+
+.color-error {
+    color: var(--color-error);
+    display: block !important;
+}
+
+.dr-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading-title {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--border-black);
 }
