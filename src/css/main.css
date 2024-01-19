@@ -53,6 +53,11 @@
     justify-content: center;
     align-items: center;
 }
+.dr-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .dc-center {
     display: flex;
@@ -67,10 +72,16 @@
     justify-content: center;
     align-items: flex-start;
 }
+.dr-left-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .heading-title {
     color: var(--white);
     font-size: 3rem;
+    line-height: 4rem;
     font-weight: 900;
     text-transform: uppercase;
 }

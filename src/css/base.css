@@ -1,6 +1,6 @@
 :root {
     --black: #000;
-    --border-black: #222;
+    --border-black: hsl(0, 0%, 13%);
     --white: white;
     --purple: #9013FE;
     --nav: 20rem;

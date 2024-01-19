@@ -19,14 +19,12 @@ function togleMenu() {
   const avatarMobile = document.querySelector(".avatar-mobile");
   const nameMobile = document.querySelector(".name-mobile");
 
-  
   navDes.classList.toggle("active-navDes");
   if (navDes.classList.contains("active-navDes")) {
     navDes.style.left = "0rem";
     navMobile.style.left = "var(--nav-width)";
     avatarMobile.style.display = "none";
     nameMobile.style.display = "none";
-
   } else {
     navDes.style.left = "-30rem";
     navMobile.style.left = "0rem";
@@ -40,8 +38,22 @@ iconMenu.onclick = function () {
   togleMenu();
 };
 model.onclick = function () {
-  if(this.classList.contains("show")) { 
+  if (this.classList.contains("show")) {
     togleMenu();
   }
-  
 };
+
+const items = document.querySelectorAll(".menu-item-link");
+
+items.forEach((item, i) => {
+  item.onclick = () => {
+    const isActive = item.classList.contains("active");
+    items.forEach((otherItem) => {
+      otherItem.classList.remove("active");
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+    }
+  };
+});
