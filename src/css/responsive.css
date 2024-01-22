@@ -115,6 +115,9 @@
         max-width: calc(1200px - var(--nav-width));
         margin: 0 auto;
     }
+    .lg-wrapper {
+        max-width: inherit !important;
+    }
 
     .spacer-element {
         height: var(--spacer-element);
