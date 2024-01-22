@@ -69,7 +69,7 @@ window.onscroll = function () {
   var scrollPosition =
     document.documentElement.scrollTop || document.body.scrollTop;
   for (i in sections) {
-    if (sections[i] <= scrollPosition) {
+    if (sections[i] - 200 <= scrollPosition) {
       document
         .querySelector(".menu-item-link.active")
         .classList.remove("active");
